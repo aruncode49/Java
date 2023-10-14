@@ -5,16 +5,18 @@ import java.util.Scanner;
 
 public class Input {
     public static void main(String[] args) {
-        // 1.Ans
-        Scanner sc = new Scanner(System.in);
-        // System.out.println("Enter your first name: ");
-        // String firstName = sc.next();
-        // System.out.println(firstName);
 
-        // 2.Ans
-        System.out.print("Enter your full name: ");
-        String fullName = sc.nextLine();
-        System.out.println(fullName);
+        try (Scanner sc = new Scanner(System.in)) {
+            // 1.Ans
+            // System.out.println("Enter your first name: ");
+            // String firstName = sc.next();
+            // System.out.println(firstName);
+
+            // 2.Ans
+            System.out.print("Enter your full name: ");
+            String fullName = sc.nextLine();
+            System.out.println(fullName);
+        }
 
     }
 }
